@@ -7,6 +7,6 @@ services:
     environment:
       - CONNECT_COLAB=0
     ports:
-      - "8888:8888"
+      - "8881:8888"
     volumes:
       - ./notebooks/notebook_1:/opt/notebooks
