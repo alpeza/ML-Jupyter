@@ -1,0 +1,12 @@
+version: "3"
+services:
+  jupyter:
+    image: alpeza/miniconda3:latest
+    deploy:
+      replicas: 1
+    environment:
+      - CONNECT_COLAB=0
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks/notebook_1:/opt/notebooks
