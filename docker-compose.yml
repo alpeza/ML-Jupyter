@@ -1,7 +1,7 @@
 version: "3"
 services:
   jupyter:
-    image: alpeza/miniconda3:latest
+    image: alpeza/mllab:1.0.0
     deploy:
       replicas: 1
     environment:
